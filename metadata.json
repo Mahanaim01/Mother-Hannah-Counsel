@@ -1,0 +1,6 @@
+{
+  "name": "Mother Hannah Counseling",
+  "description": "Compassionate and professional counseling booking website for mental health, spiritual guidance, and wellness with Mother Hannah.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

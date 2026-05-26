@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+
+  /* Geometric Balance Theme Colors */
+  --color-beige-50: #FDFBF7;   /* Pale warm ivory white background */
+  --color-beige-100: #F9F7F2;  /* Light background accent box */
+  --color-beige-200: #E5E1D8;  /* Middle gray-beige divider / borders */
+  --color-beige-300: #DCD8CE;  /* Darker border contrast */
+  --color-beige-800: #3D3A35;  /* Main text color / refined charcoal */
+  --color-beige-900: #2D2A26;  /* Deep dark charcoal/gold-black */
+
+  --color-sage-50: #F2F5F0;    /* Muted sage background */
+  --color-sage-100: #E2EADF;   /* Gentle foliage tint */
+  --color-sage-200: #CBD5C6;   /* Muted grid outline sage */
+  --color-sage-500: #7C9070;   /* Muted organic Sage Green */
+  --color-sage-600: #6B7E61;   /* Deeper hover sage */
+  --color-sage-700: #4B5A42;   /* Forest leaf tint */
+  --color-sage-900: #212C1E;   /* Deepest dark forest border */
+
+  --color-gold-100: #F7F2EA;   /* Light gold shimmer backdrop */
+  --color-gold-400: #ECC780;   /* Cream gold glow */
+  --color-gold-500: #C5A059;   /* Elegant Geometric Gold */
+  --color-gold-600: #A8833E;   /* Deep heritage gold */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+}
+
+/* Custom scrollbar to match the warm earth-tone UI */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-beige-50);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-beige-300);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-sage-500);
+}
